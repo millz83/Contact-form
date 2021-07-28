@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-container {
+    width:65%;
+    height:650px;
+    margin:10px auto;
+    text-align: center;
+    background: purple;
+    padding:90px 50px 20px;
+    box-shadow: 0 0 80px;
+
+}
+
+h2 {
+    position: relative;
+    color:pink;
+    font-size: 36px;
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+
+
+h2:after {
+    position: absolute;
+    content:'';
+    width:80px;
+    left:44%;
+    bottom:-20px;
+    height:3px;
+    background:pink;
+}
+
+.contact-input {
+    
+    width:40%;
+    margin:2% 8px;
+    height:40px;
+    padding:12px;
+    font-size:16px;
+
+}
+
+.contact-area {
+    display:block;
+    width:83%;
+    height:220px;
+    padding:12px;
+    margin: 0 auto;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.contact-submit {
+    color:#000;
+    background: grey;
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    margin: 40px auto;
+    transition:all 0.5s ease;
+
+
+}
+
+.contact-submit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px pink;
+  }
+  
+  /* Start Responsive Media Queries */
+  @media (min-width: 1200px) {
+    .contact-container{
+      width: 65%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .contact-container{
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .contact-container{
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+    .contact-container{
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .contact-container{
+      width: 90%;
+      padding: 90px 5px 20px;
+    }
+    .contact-input{
+      width: 45%;
+    }
+    .contact-area{
+      width: 94%;
+    }
+  }
+  
+  @media (max-width: 415px) {
+    .contact-container{
+      width: 90%;
+      padding: 90px 5px 20px;
+    }
+    .contact-input{
+      width: 90%;
+    }
+    .contact-area{
+      width: 90%;
+    }
+  }
+  /* End Responsive Media Queries */
+
+
